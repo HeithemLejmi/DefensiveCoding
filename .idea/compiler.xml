@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="m5_method_return_values" />
+        <module name="m6_other_def_practices" />
+        <module name="m3_method_input" />
+        <module name="m4_using_frameworks" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="defensive_programming" target="11" />
+      <module name="m3_method_input" target="11" />
+      <module name="m4_using_frameworks" target="11" />
+      <module name="m5_method_return_values" target="11" />
+      <module name="m6_other_def_practices" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

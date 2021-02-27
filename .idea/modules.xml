@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/defensive_programming.iml" filepath="$PROJECT_DIR$/defensive_programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m3_method_input/m3_method_input.iml" filepath="$PROJECT_DIR$/m3_method_input/m3_method_input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4_using_frameworks/m4_using_frameworks.iml" filepath="$PROJECT_DIR$/m4_using_frameworks/m4_using_frameworks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m5_method_return_values/m5_method_return_values.iml" filepath="$PROJECT_DIR$/m5_method_return_values/m5_method_return_values.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m6_other_def_practices/m6_other_def_practices.iml" filepath="$PROJECT_DIR$/m6_other_def_practices/m6_other_def_practices.iml" />
+    </modules>
+  </component>
+</project>
