@@ -1,5 +1,6 @@
 # Module 5 : Improve the Method Return Values
 
+Course slides: [link](https://github.com/HeithemLejmi/DefensiveCoding/blob/main/courses/module5_improving-method-return-values-slides.pdf)
 # Introduction:
 In this module, we will discuss a variety of method return values :
 - Magic Numbers (that we shouldn't return)
