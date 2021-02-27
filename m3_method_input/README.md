@@ -1,4 +1,7 @@
 # Module "Validating the method inputs":
+
+Course's slides : [link](https://github.com/HeithemLejmi/DefensiveCoding/blob/main/courses/module3_validating-method-input-slides.pdf)
+
 In this module, we will learn about :
 - How to REACT to invalid inputs
 - How to PREVENT the propagation of invalid inputs.
