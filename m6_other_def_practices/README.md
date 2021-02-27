@@ -1,11 +1,12 @@
 # Module 6 : Other Defensive Practices:
 
-The other prcatices to follow to write defensive code:
+The other practices to follow to write defensive code:
 - (Better) Encapsulation: a fundamental building block in object-oriented programming
 - Side-effects: and how to avoid them, in certain methods
 - Exception handling and anti-patterns
 - Static analysis tool (use SonarLint plugin for IntelliJ)
 
+Course slides : [link](https://github.com/HeithemLejmi/DefensiveCoding/blob/main/courses/module6_using-other-defensive-practices-slides.pdf)
 # Encapsulation:
 - definition: making your fields private and povide pulic getters/setters
   - However, if we are providing public setters ==> it is like we had made these fileds as public
