@@ -1,10 +1,10 @@
 # Course modules:
 
-- introduction to defensive coding
-- Validating method
-- Using Framework for Validation
-- Improve the Method Return Values
-- Other Defensive Practices
+- Introduction to defensive coding
+- [Validating method](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m3_method_input)
+- [Using Framework for Validation](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m4_using_frameworks)
+- [Improve the Method Return Values](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m5_method_return_values)
+- [Other Defensive Practices](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m6_other_def_practices)
 
 
 # Project presentation :
