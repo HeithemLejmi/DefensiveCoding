@@ -1,4 +1,5 @@
 # Module 4 : Using Framework for Validation
+Course slides : [link](https://github.com/HeithemLejmi/DefensiveCoding/blob/main/courses/module4_using-frameworks-for-validation-slides.pdf)
 
 ## Objects API
 - It is a native Java API, that has several interesting methods that we can use to validate our inputs:
