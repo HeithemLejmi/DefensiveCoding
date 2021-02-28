@@ -1,7 +1,7 @@
 # Course modules:
 
 - [Introduction to defensive coding](https://github.com/HeithemLejmi/DefensiveCoding/blob/main/courses/introduction_why-defensive-coding-matters-slides.pdf)
-- [Validating method](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m3_method_input)
+- [Validating method inputs](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m3_method_input)
 - [Using Framework for Validation](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m4_using_frameworks)
 - [Improve the Method Return Values](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m5_method_return_values)
 - [Other Defensive Practices](https://github.com/HeithemLejmi/DefensiveCoding/tree/main/m6_other_def_practices)
@@ -25,7 +25,7 @@
   
 ![img](img/app_architecture.png)
 
-SRP: single responsibility principle (one od the SOLID principles) => every class/method has only one resposibility, and that's why we are separating the searching and retrieving actions.
+SRP: single responsibility principle (one of the SOLID principles) => every class/method has only one responsibility, and that's why we are separating the searching and retrieving actions.
 
 # Running the program "App" :
 
