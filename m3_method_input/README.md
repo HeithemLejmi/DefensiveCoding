@@ -35,8 +35,7 @@ Exercise:
         // 3. We are doing other actions (retrieving data from DB) before even checking the validity of our method inputs
         List<Flight> flights = flightStore.getFlights();
 
-        // 1. We are doing multiple/nested guard clauses (one could pass, but others could not): we want the check to be 
-        done one time for all the inouts:
+        // 1. We are doing multiple/nested guard clauses (one could pass, but others could not): we want the check to be done one time for all the inputs:
         if(isInvalidString(fromDest)) {
             throw new IllegalArgumentException("error message");
         }
@@ -66,7 +65,7 @@ Exercise:
   - one if statement to do null-check for all the fields at the same time at the beginning of the method :
     - if null => throw an IllegalArgumentException for the null-check (instead of returning null) (instead of returning null)
     - if not, proceed with the execution
-  - this technique is less specific (we don't throw a specific exception for each specific null field, but still we are printing all the field on the exception msg, so we can see the one wh(s causing the problem.
+  - this technique is less specific (we don't throw a specific exception for each specific null field, but still we are printing all the field on the exception msg, so we can see the one who's causing the problem).
     - If you have many input arguments => go for the generic version
     - if you have few (2 or 3 args), you can try more specific null-check
 
