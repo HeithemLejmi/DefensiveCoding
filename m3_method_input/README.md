@@ -8,9 +8,9 @@ In this module, we will learn about :
 
 Example of good practices, to do this, is: "Guard Clause"
 ## Guard Clauses : Validating inputs:
-**Guard Clause** will helps us to ensure :
+**Guard Clause** will help us to ensure :
 - Fail Fast : if invalid input -> then throw an exception
-- Return Early  : if invalid input -> then return null or return false or exit the method by doing short `return;`
+- Return Early  : if invalid input -> then return false or exit the method by doing short `return;`
 - Alternative execution: if invalid input -> then execute a different method or print a user-friendly message of what went wrong
 
 *Detecting an issue early, is translated into a faster trouble-shouting later*
@@ -27,8 +27,15 @@ Example of good practices, to do this, is: "Guard Clause"
 ![img](./img/rules_guard_clause.png)
 
 Exercise:
- - Example of a bad practice while using a Guard Clause: where we have multiple nested if statment (and in the deepest 
-   layer, we do the searching) and returning null when invalid.
+ - Example of a bad practice while using a Guard Clause: where we have multiple nested `if statement` (and in the deepest 
+   layer, we do the searching) and returning `null` when invalid.
+   
+![img](img/multiple_nested_if_statement.png)
+
+ - Improve a little: 
+   - by avoiding the nested `if-statement`, and simplified into 3 simple `if-statement` : (but still,
+   it is not perfect yet)
+   - instead of returning `null` when invalid, we are throwing an exception.  
 ```java
     public List<Flight> search(String fromDest, String toDest, String departDate, int passengerNum){
 
@@ -62,12 +69,12 @@ Exercise:
 ```
 
 - Correcting the above example:  
-  - one if statement to do null-check for all the fields at the same time at the beginning of the method :
-    - if null => throw an IllegalArgumentException for the null-check (instead of returning null) (instead of returning null)
+  - one `if statement` to do `null-check` for all the fields at the same time at the beginning of the method :
+    - if `null` => throw an `IllegalArgumentException` for the `null-check` (instead of returning `null`)
     - if not, proceed with the execution
-  - this technique is less specific (we don't throw a specific exception for each specific null field, but still we are printing all the field on the exception msg, so we can see the one who's causing the problem).
+  - this technique is less specific (we don't throw a specific exception for each specific `null` field, but still we are printing all the field on the exception msg, so we can see the one who's causing the problem).
     - If you have many input arguments => go for the generic version
-    - if you have few (2 or 3 args), you can try more specific null-check
+    - if you have few (2 or 3 args), you can try more specific `null-check`
 
 ```java
     public List<Flight> search(String fromDest, String toDest, String departDate, int passengerNum){
@@ -131,7 +138,7 @@ System.out.println(intResult); // [2, 3]
 ![img](./img/false_conditions_number-validation.png)  
 
 - This is another rule while validating number:
-  - if working on calculation methods, don't forget to add validators to avoid dividing by zer.
+  - if working on calculation methods, don't forget to add validators to avoid dividing by zero.
 
 ## String Validation
 
@@ -141,7 +148,9 @@ System.out.println(intResult); // [2, 3]
   
 ![img](img/string_validation_rules.png)
 
-- Exercise: for the String fields in our App, we don't want this kind of field to be `null` or empty or containing only 
+- **Exercise:** 
+  
+for the String fields in our App, we don't want this kind of field to be `null` or empty or containing only 
   spaces => Invalid Strings : `null` or `"""` or `"   "`
   - So the check to do in this String-Validation is :
   > destination == null  => to check if the destination field is null or not
@@ -190,7 +199,7 @@ if(isInvalidString(fromDest) || isInvalidString(toDest)  || isInvalidString(depa
 
 - Another important rule while validating/comparing strings :
   - you should respect a specific order while using the `string1.equals(string2)`. The first string here `string1` should 
-    not be null:
+    not be `null`:
     ![img](img/string_validation_order.png)
   
 ## Date Validation :
@@ -280,7 +289,8 @@ if(fromDest.equalsIgnoreCase(toDest)){
        FlightSearchServiceor other Services to instantiate a valid Flight Object)
        ![img](img/validator_search_request.png)
        ![img](img/instantiate_valid_flight_obj.png)
-  => This way, our system will be sure, that what ever we are recieving (as inputs) will be valid and safe.
+  
+=> This way, our system will be sure, that what ever we are recieving (as inputs) will be valid and safe.
 - A Class Invariant, is a concept that refers to property that remain true for all instances of a class no matter what 
   happens.
   

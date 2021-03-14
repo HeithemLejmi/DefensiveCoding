@@ -8,10 +8,11 @@ The other practices to follow to write defensive code:
 
 Course slides : [link](https://github.com/HeithemLejmi/DefensiveCoding/blob/main/courses/module6_using-other-defensive-practices-slides.pdf)
 # Encapsulation:
-- definition: making your fields private and povide pulic getters/setters
-  - However, if we are providing public setters ==> it is like we had made these fileds as public
+- definition: making your fields private and provide public getters/setters
+  - However, if we are providing public setters ==> it is like we had made these fields as public
     
-==> Correction of the definition: Encapsulation consists on hiding the implementation and the information (by making all the class members inaccessible, by using th accessors level private)
+==> Correction of the definition: Encapsulation consists on hiding the implementation and the information (by making all the class members inaccessible, 
+by using th accessors level private)
     
 - Better encapsulations: 
     - expose public getter/setter as less as possible, and keep the fields private !!
@@ -38,6 +39,7 @@ Side Effects :
   ==> This way you will have less surprises, less unexpected behaviour, and thus less bugs:
   
 Methods that do both side-effects/return values:
+
 ![img](img/methods_doing_both_side_effects_return_values.png)
 
 # Improve your exceptions handling:
@@ -58,9 +60,11 @@ To better handle an exception:
 Here how it looks :
 
 - Insufficient exception information:
+
 ![img](img/Insufficent_exception_info.png)
   
 - Sufficient exception information:
+
 ![img](img/Sufficent_exception_info.png)
   
 Example of a well handled exception: 

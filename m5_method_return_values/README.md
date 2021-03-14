@@ -17,7 +17,7 @@ The source of inputs could be :
 
 # Magic Number:
 - Avoid writing methods that return magic number (for example a method that return 1 or 0 or -1), 
-  because the programmers who are going to call your method ar going to have a hard time to write clean code (you force 
+  because the programmers who are going to call your method are going to have a hard time to write clean code (you force 
   the programmers to understand the meaning of these magic numbers (1, 0, -1), and to adapt their code to these return values)
   
 ![img](img/method_return_magic_number.png)
@@ -38,8 +38,9 @@ However, the bad return values that we should avoid returning are `null` and als
 
 ![img](img/bad_return_values.png)
 
-In the example below, we have a void method `write`. As we cann see in this screenshot, if the method succeed, nothing 
+In the example below, we have a void method `write`. As we can see in this screenshot, if the method succeed, nothing 
 will be returned, but in case it failed, we should throw an exception to notify the user about its failure:
+
 ![img](img/when_void_and_fail_then_throw.png)
 
 # Purpose of Null
@@ -82,22 +83,23 @@ nulability of the result of this method, only the check of the emptiness of this
 
 - what is an optional ? :  an Optional is a container object which may or may not contain a non-null value.
 
-- why use an optional ? :  Optional has 3 options to deal with the cases wher we have no values:
+- why use an optional ? :  Optional has 3 options to deal with the cases where we have no values:
 
   - **.orElse()** / **.orElseGet()** => if the optional is empty then return a default value
 
   - **orElseThrow()** =>  if the optional is empty then throw an exception
   
-  - **.ifPresentOrElse(lambdaFunction1, lambdaFunction2)** ==> if the vlue is present then invoke the function in the first 
+  - **.ifPresentOrElse(lambdaFunction1, lambdaFunction2)** ==> if the value is present then invoke the function in the first 
     arg, else invoke the function in the 2nd arg
   
-  !!! Optional.get() is used to unpack the Optional and get the value that it contains, when we are certain that this Optional is not empty. never use it directly unless you are 100% sure that this Optional is packing a value. If the Optional is empty, and still you call Optional.get() you will get a NoSuchElementException  
+  !!! `Optional.get()` is used to unpack the Optional and get the value that it contains, when we are certain that this Optional is not empty. 
+  never use it directly unless you are 100% sure that this Optional is packing a value. If the Optional is empty, and still you call Optional.get() you will get a `NoSuchElementException`  
 
-See the example below for the 3 options of handeling an Optional:
+See the example below for the 3 options of handling an Optional:
 
 ![img](img/3_options_of_Optional_handeling_values.png)
 
 # Conclusion:
-After module, we can update our **React & Prevent** table :
+After this module, we can update our **React & Prevent** table :
 
 ![img](img/react_prevent_after_improving_return_types.png)
